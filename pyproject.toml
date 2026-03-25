@@ -1,0 +1,17 @@
+[project]
+name = "tasks"
+version = "0.2.0"
+authors = [
+    { name = "Mohsen Bahaloo", email = "mbahaloo1398@gmail.com" },
+]
+description = "Task management tool with FastAPI backend, SQLite persistence, event-driven domain behaviors, and a Next.js frontend."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard]>=0.111.0",
+    "uvicorn>=0.30.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
